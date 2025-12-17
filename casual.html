@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD.STORE - Homepage</title>
+    <link rel="stylesheet" href="casual.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+      <nav class="top-bar">
+          <p>Sign up and get 20% off to your first order. <a href="#">Sign Up Now</a></p>
+      </nav>
+      <nav class="navbar container">
+          <div class="logo">CRUD.STORE</div>
+          <ul class="nav-links">
+              <li><a href="index.html">Shop</a></li>
+              <li><a href="producdetail.html">On Sale</a></li>
+              <li><a href="casual.html">New Arrivals</a></li>
+              <li><a href="cart.html">Brands</a></li>
+          </ul>
+          <div class="search-bar">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <input type="text" placeholder="Search for products...">
+          </div>
+          <div class="nav-icons">
+              <i class="fa-solid fa-cart-shopping"></i>
+              <i class="fa-regular fa-user"></i>
+          </div>
+      </nav>
+
+      <nav class="breadcrumb">
+          <a href="index.html">Home</a> &gt;
+          <span class="current">Casual</span>
+      </nav>
+    </header>
+
+    <main>
+      <section class="main-layout container">
+        <aside>
+          <section class="filters-column">
+            <h2 class="section-title">Filter</h2>
+
+            <div class="filter-group">
+              <h3>Clothing Type</h3>
+              <ul>
+                <li><input type="checkbox"> T-shirts</li>
+                <li><input type="checkbox"> Shorts</li>
+                <li><input type="checkbox"> Shirts</li>
+                <li><input type="checkbox"> Hoodie</li>
+                <li><input type="checkbox"> Jeans</li>
+              </ul>
+            </div>
+
+            <div class="filter-group">
+              <h3>Price Range</h3>
+              <input type="range" min="50" max="200">
+              <p>$50 – $200</p>
+            </div>
+
+            <div class="filter-group">
+              <h3>Colors</h3>
+              <div class="color-swatches">
+                <span class="swatch green"></span>
+                <span class="swatch red"></span>
+                <span class="swatch yellow"></span>
+                <span class="swatch orange"></span>
+                <span class="swatch lightblue"></span>
+                <span class="swatch blue selected"></span>
+                <span class="swatch purple"></span>
+                <span class="swatch pink"></span>
+                <span class="swatch white"></span>
+                <span class="swatch black"></span>
+              </div>
+            </div>
+
+            <div class="filter-group">
+              <h3>Size</h3>
+              <ul>
+                <li><input type="checkbox"> XX-Small</li>
+                <li><input type="checkbox"> X-Small</li>
+                <li><input type="checkbox"> Small</li>
+                <li><input type="checkbox"> Medium</li>
+                <li><input type="checkbox" checked> Large</li>
+                <li><input type="checkbox"> X-Large</li>
+                <li><input type="checkbox"> XX-Large</li>
+                <li><input type="checkbox"> 3X-Large</li>
+                <li><input type="checkbox"> 4X-Large</li>
+              </ul>
+            </div>
+
+            <div class="filter-group">
+              <h3>Dress Style</h3>
+              <ul>
+                <li><input type="checkbox"> Casual</li>
+                <li><input type="checkbox"> Formal</li>
+                <li><input type="checkbox"> Party</li>
+                <li><input type="checkbox"> Gym</li>
+              </ul>
+            </div>
+
+            <button class="btn-primary apply-filter">Apply Filter</button>
+          </section>
+        </aside>
+
+        <!-- Productos -->
+      <section class="product-listing">
+        <h2 class="section-title">Casual Collection</h2>
+        <div class="product-grid">
+          
+          <div class="product-card">
+            <div class="card-image"><img src="/imagenes/rosada.png" alt="Gradient Graphic T-shirt"></div>
+            <div class="card-info">
+              <h3>Gradient Graphic T-shirt</h3>
+              <div class="rating">★★★☆☆ <span>3.5/5</span></div>
+              <div class="price">$145</div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="card-image"><img src="/imagenes/polotipping.png" alt="Polo with Tipping Details"></div>
+            <div class="card-info">
+              <h3>Polo with Tipping Details</h3>
+              <div class="rating">★★★★☆ <span>4.5/5</span></div>
+              <div class="price">$180</div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="card-image"><img src="/imagenes/blancoynegro.png" alt="Black Striped T-shirt"></div>
+            <div class="card-info">
+              <h3>Black Striped T-shirt</h3>
+              <div class="rating">★★★★★ <span>5.0/5</span></div>
+              <div class="price">$120 <span class="discount">$150</span> <span class="badge">-30%</span></div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="card-image"><img src="/imagenes/Sin título3.png" alt="Skinny Fit Jeans"></div>
+            <div class="card-info">
+              <h3>Skinny Fit Jeans</h3>
+              <div class="rating">★★★☆☆ <span>3.5/5</span></div>
+              <div class="price">$240 <span class="discount">$260</span> <span class="badge">-20%</span></div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="card-image"><img src="/imagenes/Checkered.png" alt="Checkered Shirt"></div>
+            <div class="card-info">
+              <h3>Checkered Shirt</h3>
+              <div class="rating">★★★★☆ <span>4.5/5</span></div>
+              <div class="price">$180</div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="card-image"><img src="/imagenes/Sin título5.png" alt="Sleeve Striped T-shirt"></div>
+            <div class="card-info">
+              <h3>Sleeve Striped T-shirt</h3>
+              <div class="rating">★★★★☆ <span>4.5/5</span></div>
+              <div class="price">$130 <span class="discount">$160</span> <span class="badge">-30%</span></div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="card-image"><img src="/imagenes/vertical.png" alt="Vertical Striped Shirt"></div>
+            <div class="card-info">
+              <h3>Vertical Striped Shirt</h3>
+              <div class="rating">★★★★★ <span>5.0/5</span></div>
+              <div class="price">$212 <span class="discount">$232</span> <span class="badge">-20%</span></div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="card-image"><img src="/imagenes/naranja.png" alt="Courage Graphic T-shirt"></div>
+            <div class="card-info">
+              <h3>Courage Graphic T-shirt</h3>
+              <div class="rating">★★★★☆ <span>4.0/5</span></div>
+              <div class="price">$145</div>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <div class="card-image"><img src="/imagenes/mochos.png" alt="Loose Fit Bermuda Shorts"></div>
+            <div class="card-info">
+              <h3>Loose Fit Bermuda Shorts</h3>
+              <div class="rating">★★★☆☆ <span>3.0/5</span></div>
+              <div class="price">$80</div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="center-btnn">
+          <button class="btn-outline">← Previous</button>
+          <button class="btn-outline">1</button>
+          <button class="btn-outline">2</button>
+          <button class="btn-outline">3</button>
+          <span>...</span>
+          <button class="btn-outline">10</button>
+          <button class="btn-outline">Next →</button>
+        </div>
+      </section>
+
+
+      </section>
+    </main>
+    
+    <footer class="footer">
+      <div class="container">
+        <div class="newsletter">
+          <h2>STAY UP TO DATE ABOUT OUR LATEST OFFERS</h2>
+          <div class="newsletter-form">
+            <input type="email" placeholder="Enter your email address">
+            <button>Subscribe to Newsletter</button>
+          </div>
+        </div>
+        
+        <div class="footer-links">
+          <div class="footer-brand">
+            <h3>CRUD.STORE</h3>
+            <p>We have clothes that suits your style and which you're proud to wear.</p>
+          </div>
+          <div class="link-column">
+            <h4>COMPANY</h4>
+            <a href="#">About</a>
+            <a href="#">Features</a>
+            <a href="#">Works</a>
+          </div>
+          <div class="link-column">
+            <h4>HELP</h4>
+            <a href="#">Customer Support</a>
+            <a href="#">Delivery Details</a>
+            <a href="#">Shipping</a>
+          </div>
+        </div>
+        <hr>
+        <p class="copyright">Crud.store © 2025, All Rights Reserved</p>
+      </div>
+    </footer>
+</body>
+</html>
